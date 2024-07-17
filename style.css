@@ -1,0 +1,135 @@
+html{
+    font-size: 62.5;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(250, 247, 247);
+    color: rgb(47, 47, 47);
+    margin: 0;
+    font-size: 16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1{
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.overflow{
+    overflow: hidden;
+}
+
+/* FEED INSTAGRAM */
+
+#feed-contenedor{
+    background-color: rb(189,189,189);
+    margin: 5rem 0;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+.contenedor-galery{
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.main-galery{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.chevron span{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    font-size: 2rem;
+    color: rgb(157,217,238);
+    width: 4.3rem;
+    height: 4.7rem;
+    background-color: rgba(23,23,23,0.9);
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.chevron span:hover{
+    background-color: rgba(23,23,23,0.6);
+}
+.chevron #prev{
+    padding-right: .5rem;
+    justify-content: flex-end;
+    left: -1.7rem;
+
+}
+.chevron #next{
+    padding-right: .5rem;
+    justify-content: flex-start;
+    left: -1.7rem;
+    
+}
+.galery{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.image{
+    min-width: 20%;
+    height: 273px;
+    position: relative;
+
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+.image:hover .opacity-hover{
+    width: 100%;
+}
+
+.caption{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transform: translateY(300px);
+    transition: transform 100ms linear;
+
+}
+.opacity-hover:hover .caption{
+    transform: translateY(0px);
+}
+
+
+.caption p{
+    color: white;
+    width: 80%;
+
+}
+
+.opacity-hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: backgorun-color 300ms linear;
+}
+
+.opacity-hover:hover{
+    background-color: rgba(2,2,2,0.8);
+}
+
