@@ -6,9 +6,9 @@ app = Flask(__name__)
 app.secret_key = 'your_secret_key'
 
 # Configuración de la aplicación de Facebook
-FB_APP_ID = 'your_app_id'
-FB_APP_SECRET = 'your_app_secret'
-REDIRECT_URI = 'http://localhost:5000/callback'
+FB_APP_ID ='396936386726604'
+FB_APP_SECRET ='53515426ab13710ad5c6ff1b38d42120'
+REDIRECT_URI = 'https://diegojerez09.pythonanywhere.com/callback'
 
 # URL de autenticación de Facebook
 AUTH_URL = (
